@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva tarea</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#guardar{
+    
+
+padding: 5px;
+font-weight: 500;
+font-size: 15px;
+color: #ffffff;
+background-color:rgb(21, 163, 85);
+border-radius: 12px;
+border: 2px solid green;
+
+}
+    </style>
+</head>
+<body>
+    <center><h1 style="background-color:powderblue; color:red;"><font face="verdana">Editar Tarea</font></h1></center>
+    <form action="index.html">
+        <input name="id" type="number" required min="0" step="1" hidden>
+        <br>
+        <label><font face= "verdana" color="red">Fecha </font><input name="fecha" type="date" required></label>
+        <br>
+        <label><font face= "verdana" color="red">Materia</font> <input name="materia" type="text" required></label>
+        <br>
+        <label><font face= "verdana" color="red">Descripción </font>
+            <textarea name="descripcion"  rows="3" cols="50" required></textarea>
+        </label>
+        <br>
+        <font face= "verdana" color="royalblue">Tarea realizada:</font>
+        <label><input id="radioSi" name="realizada" type="radio" value="Sí" required>Sí</label>
+        <label><input id="radioNo" name="realizada" type="radio" value="No">No</label>
+        <br>
+
+        <button type="submit" id="guardar"><h3>Guardar</h3></button>
+    </form>
+    <a href="index.html">Lista de tareas</a>
+    <script src="scripts/tareas.js"></script>
+    <script src="scripts/readParameters.js"></script>
+    <script src="scripts/controllerEdit.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva tarea</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <center><h1 style="background-color:powderblue; color:red;">Añadir tarea</h1></center>
+    <form action="index.html">
+        <label id= "fecha"><font face= "verdana" color="red"></font>Fecha</font><input name="fecha" type="date" required ></label>
+        <br>
+        <label><font face= "verdana" color="red">Materia</font> <input name="materia" type="text" required></label>
+        <br>
+        <label><font face= "verdana" color="red">Descripción</font> <textarea name="descripcion"  rows="3" cols="50" required></textarea>
+        </label>
+        <br>
+    
+        <font face= "verdana" color="royalblue">Tarea realizada:</font>
+        
+        <label><input name="realizada" type="radio" face= "verdana" value="Sí" required>Sí</label>
+        <label><input name="realizada" type="radio" face= "verdana" value="No">No</label>
+        <br>
+
+        <button type="submit">Añadir</button>
+    </form>
+    <a href="index.html">Lista de tareas</a>
+
+</body>
+</html>

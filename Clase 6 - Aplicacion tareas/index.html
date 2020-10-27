@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body{
+            margin: 50pxborder = 5px red;
+            border:5px solid red;
+            padding:30px
+            
+        }
+        #eliminar{
+
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(21, 163, 85);
+    border-radius: 12px;
+    border: 2px solid green;
+  }
+  #editar{
+
+    padding: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    background-color:rgb(21, 163, 85);
+    border-radius: 12px;
+    border: 2px solid green;
+  }
+  #NTarea{
+    padding: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    background-color:royalblue;
+    border-radius: 12px;
+    border: 2px solid black;
+  }
+  
+    </style>
+    <center><h1 style="background-color:powderblue; color:red;"><font face="verdana">Tareas</font></h1></center>
+    <table id="tablaTareas"></table>
+    <a href="add.html"><button id="NTarea"><h2>Nueva Tarea</h2></button></a>
+    <h2 style="color: royalblue"><font face="verdana">Editar</font></h2>
+    <form action="edit.html">
+        ID tarea a editar:
+        <input type="number" name="id" min="0" step="1" required>
+        <button id="editar" type="submit">Editar</button>
+    </form>
+    <h2 style="color: royalblue"><font face="verdana">Eliminar</font></h2>
+    <h3>PRECAUCIÓN, ESTA ACCIÓN NO SE PUEDE DESHACER</h3>
+    <form id="deleteForm">
+        ID tarea a eliminar:
+        <input type="number" name="id" min="0" step="1" required>
+        <button id= "eliminar" type="submit">Eliminar</button>
+    </form>
+    
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/tareas.js"></script>
+    <script src="scripts/readParameters.js"></script>
+    <script src="scripts/controllerIndex.js"></script>
+</body>
+</html>
