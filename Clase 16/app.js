@@ -28,7 +28,7 @@ function crearParticula(click){
     let nuevaParticula = Object.create(particula)
     nuevaParticula.x = click.offsetX
     nuevaParticula.y = click.offsetY
-    let ang = Math.PI * Math.random()
+    let ang = 2*Math.PI * Math.random()
     nuevaParticula.vX =  Math.cos(ang) * Math.random() * 400 
     nuevaParticula.vY =  Math.sin(ang) * Math.random() * 400 
     particulas.push(nuevaParticula)
